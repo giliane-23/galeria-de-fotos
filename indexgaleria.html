@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <link rel="stylesheet" href="stylegaleria.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Minha Galeria</h1>
+        <p>Portifólio de Fotos</p>
+    </header>
+    <main class="galeria">
+        <img src="img/IMG_9282.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9287.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9288.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9297.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9300.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9303.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9323.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9335.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9336.jpg" onclick="abrirModal(this)">
+        <img src="img/IMG_9339.jpg" onclick="abrirModal(this)">
+    </main>
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <button class="nav anterior" onclick="imagemAnterior()">&#10094;</button>
+
+        <img class="modal-img" id="imgModal">
+
+        <button class="nav proximo" onclick="proximaImagem()">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
